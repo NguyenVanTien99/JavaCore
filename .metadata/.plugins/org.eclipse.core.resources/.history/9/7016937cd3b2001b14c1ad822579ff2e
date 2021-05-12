@@ -1,0 +1,18 @@
+package demo;
+
+public class Student implements Action {
+	
+	private String name;
+	private String age;
+	
+	public void name() {
+		
+	}
+	
+	@Override
+	public void study() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

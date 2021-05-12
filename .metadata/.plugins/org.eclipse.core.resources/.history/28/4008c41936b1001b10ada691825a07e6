@@ -1,0 +1,11 @@
+
+public class WelcomeHell {
+
+	
+	public static void main(String[] args) {
+		System.out.println('B' == 'b');
+		
+	}
+	
+
+}

@@ -1,0 +1,26 @@
+package as_501;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Validator {
+	private static final String VALID_CODE_RG = "FW\\d{3}";
+	
+	private static Pattern pattern;
+	
+	private static Matcher matcher;
+	
+	public static void validateCode(String code) {
+		pattern = Pattern.compile(VALID_CODE_RG);
+		matcher = pattern.matcher(code);
+		if(matcher.matches() == false) {
+			System.out.println("no hope");
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

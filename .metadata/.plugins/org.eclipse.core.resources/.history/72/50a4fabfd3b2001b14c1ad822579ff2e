@@ -1,0 +1,9 @@
+package demo;
+
+public class Parent {
+	private String tall;
+	
+	public void name1() {
+		System.out.println("ha ha ha");
+	}
+}

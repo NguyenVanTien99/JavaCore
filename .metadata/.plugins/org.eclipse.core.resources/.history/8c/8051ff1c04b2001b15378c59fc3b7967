@@ -1,0 +1,12 @@
+package demo;
+
+public final class Example {
+	
+	static private String abcString;
+	
+	static {
+		abcString = "123";
+	}
+	
+	
+}

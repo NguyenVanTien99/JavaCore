@@ -1,0 +1,22 @@
+package as_501;
+
+public class CourseManagement {
+	public static void main(String[] args) {
+		
+		Course[] course = new Course[10];
+
+		course[0] = new Course("FW001", "SQL", 4.0, "active", "optional");
+
+		course[1] = new Course("FW002", "Java", 4.0, "active", "optional");
+
+		course[2] = new Course("FW004", "Ruby", 3.0, "in-active", "mandatory");
+
+		course[3] = new Course("FW005", "C++", 2.0, "in-active", "mandatory");
+
+		course[4] = new Course("FW006", "Js", 4.0, "active", "N/A");
+
+//		for (Course item : course) {
+//			System.out.println(item);
+//		}
+	}
+}

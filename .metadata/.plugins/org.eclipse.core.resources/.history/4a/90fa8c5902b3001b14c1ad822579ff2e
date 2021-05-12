@@ -1,0 +1,48 @@
+package as_602;
+
+public class Rectangle implements Shape {
+	private int length;
+	private int width;
+	
+	public Rectangle() { 
+	}
+	
+	public Rectangle(int length, int width) {
+		super();
+		this.length = length;
+		this.width = width;
+	}
+	
+	public int getLength() {
+		return length;
+	}
+	public void setLength(int length) {
+		this.length = length;
+	}
+	public int getWidth() {
+		return width;
+	}
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	@Override
+	public int calculatePerimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int calculateArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setLengthWidth(int len, int width) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

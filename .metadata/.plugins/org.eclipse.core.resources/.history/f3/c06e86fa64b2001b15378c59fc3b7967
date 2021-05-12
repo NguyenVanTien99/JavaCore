@@ -1,0 +1,30 @@
+package as_501;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Validator {
+	private static final String VALID_CODE_RG = "FW\\d{3}";
+	
+	private static Pattern pattern;
+	
+	private static Matcher matcher;
+	
+	public static void validateCode(String code) throws GeneralException{
+		pattern = Pattern.compile(VALID_CODE_RG);
+		matcher = pattern.matcher(code);
+		if(matcher.matches() == false) {
+			throw new GeneralException("Course code has a format FWXXX(X : 0 -9)");
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		try {
+			validateCode("sTRING");
+		} catch (GeneralException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

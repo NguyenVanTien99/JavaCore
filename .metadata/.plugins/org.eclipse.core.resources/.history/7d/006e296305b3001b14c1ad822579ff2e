@@ -1,0 +1,21 @@
+package as_602;
+
+public class ShapeTest {
+	public static void main(String[] args) {
+		Rectangle[] rectangles = new Rectangle[2];
+		
+	for (int i = 0; i < rectangles.length; i++) {
+		System.out.println("Enter value for rectangle " + (i+1) );
+		rectangles[i] = new Rectangle();
+		rectangles[i].input();
+	}
+	
+	System.out.println("Display infor all rectangle");
+	for (Rectangle rectangle : rectangles) {
+		System.out.println(rectangle);
+	}
+	
+	System.out.println();
+	
+	}
+}

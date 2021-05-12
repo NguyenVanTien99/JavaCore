@@ -1,0 +1,31 @@
+package demo;
+
+public class Example {
+	
+	static private String abcString;
+	
+	static {
+		abcString = "123";
+	}
+	
+	
+	public static String getAbcString() {
+		return abcString;
+	}
+
+
+	public static void setAbcString(String abcString) {
+		Example.abcString = abcString;
+	}
+
+
+	public static void main(String[] args) {
+		Example example = new Example();
+		
+		Example.abcString = "456";
+		
+		System.out.println(example.abcString);
+		
+		
+	}
+}

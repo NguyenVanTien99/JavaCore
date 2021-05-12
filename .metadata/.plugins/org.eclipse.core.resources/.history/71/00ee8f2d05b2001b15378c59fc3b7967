@@ -1,0 +1,15 @@
+package demo;
+
+public class Example {
+	
+	static private String abcString;
+	
+	static {
+		abcString = "123";
+	}
+	
+	public static void name() {
+		System.out.println(`);
+	}
+	
+}

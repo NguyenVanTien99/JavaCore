@@ -1,0 +1,40 @@
+package demo;
+
+public class PrimitiveDataSample {
+	public static void main(String[] args) {
+//		int number = 2017;
+//		byte b = 23;
+//		boolean checked = true;
+//		float f = 23.5f;
+//		double d = 34.5;
+//		long l = 2021;
+//		
+//		String dataString = "xxx";
+//		
+//		
+//		int x = 5;
+//		short n = 4;
+//		
+//		n = (short) x;
+//		
+//		
+//		int a = 5, z = 9;
+//		
+//		Integer c = null;
+//		
+//		c = new Integer(a) + new Integer(z) ;
+		
+		
+		Long x = new Long(44);
+		Long x2 = new Long("22");
+		
+		System.out.println(x2.equals(x));
+		
+		System.out.println(x);
+				
+				
+		
+
+		
+	} 
+}

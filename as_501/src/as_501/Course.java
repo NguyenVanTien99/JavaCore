@@ -70,6 +70,7 @@ public class Course {
 	}
 
 	public void input() {
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		boolean check;
 

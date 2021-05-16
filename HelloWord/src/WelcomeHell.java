@@ -1,19 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
 
-public class WelcomeHell {
+public abstract class WelcomeHell extends F {
 
 	
 	public static void main(String[] args) {
-		int a = 5;
-		int b = a++ + a + 1;
+		List p = new ArrayList<E>();
 		
-		System.out.println(a);
-		System.out.println(b);
 		
-	 
-
 		
 	}
 	
-	
-
 }

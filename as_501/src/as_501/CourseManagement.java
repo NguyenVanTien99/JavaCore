@@ -21,6 +21,7 @@ public class CourseManagement {
 	
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		
 		Course[] course = new Course[2];

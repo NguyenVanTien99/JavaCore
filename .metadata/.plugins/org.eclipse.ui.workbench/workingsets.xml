@@ -15,6 +15,7 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/as_702" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/as_801" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/as_901" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/as_902" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1620523771283_2" label="Window Working Set" name="Aggregate for window 1620523771283"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1620812240079_3" label="Window Working Set" name="Aggregate for window 1620812240079"/>
@@ -30,6 +31,6 @@
 <workingSet IMemento.internal.id="Java Test Sources"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1621297671855_9" label="Window Working Set" name="Aggregate for window 1621297671855"/>
-<mruList name="Java Main Sources"/>
 <mruList name="assignment"/>
+<mruList name="Java Main Sources"/>
 </workingSetManager>

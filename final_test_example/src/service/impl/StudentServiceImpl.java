@@ -3,7 +3,6 @@ package service.impl;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -25,8 +24,17 @@ public class StudentServiceImpl implements StudentService {
 
 		int numberStudentString;
 
-		System.out.println("Enter the number student company need: ");
-		numberStudentString = scanner.nextInt();
+		do {
+			System.out.println("Enter the number student company need: ");
+			numberStudentString = scanner.nextInt();
+
+			if (numberStudentString >= 10 && numberStudentString <= 15) {
+				System.out.println("Employee");
+				break;
+			}
+
+			continue;
+		} while (true);
 
 		Collections.sort(goodStudents, new Comparator<GoodStudent>() {
 
@@ -39,6 +47,40 @@ public class StudentServiceImpl implements StudentService {
 
 				// return o2.getFullName().compareTo(o1.getFullName());
 
+			}
+		});
+		
+		Collections.sort(normalStudents, new Comparator<NormalStudent>() {
+			
+//			public class BirthDateComparator implements Comparator<Person> {
+//			    public int compare(Person p, Person q) {
+//			        if (p.getBirthDate().before(q.getBirthDate()) {
+//			            return -1;
+//			        } else if (p.getBirthDate().after(q.getBirthDate()) {
+//			            return 1;
+//			        } else {
+//			            return 0;
+//			        }        
+//			    }
+//			}
+
+			@Override
+			public int compare(NormalStudent o1, NormalStudent o2) {
+				
+				if (o1.getEnglishScore() ==  o2.getEnglishScore()) {
+					return o2.getFullName().compareTo(o1.getFullName());
+				}
+				
+//				if (o1.getEnglishScore() ==  o2.getEnglishScore()) {
+//					return o2.getDoB().compareTo(o1.getDoB());
+//				}
+				
+				if (o1.getEntryTestScore() == o2.getEntryTestScore()) {
+					return Double.valueOf(o2.getEnglishScore()).compareTo(Double.valueOf(o1.getEnglishScore()));
+				}
+				
+
+				return Double.valueOf(o2.getEntryTestScore()).compareTo(Double.valueOf(o1.getEntryTestScore()));
 			}
 		});
 

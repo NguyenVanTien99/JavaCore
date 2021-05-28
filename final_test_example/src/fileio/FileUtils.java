@@ -9,33 +9,42 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileUtils {
+public class FileUtils {	
+	
 	public static void writeInFile(String pathFile, String line, boolean over) throws Exception {
-
+		BufferedWriter bufferedWriter = null;		
 		try {
 			FileWriter fileWriter = new FileWriter(pathFile, over);
-			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+			bufferedWriter = new BufferedWriter(fileWriter);
 			bufferedWriter.write(line);
-			bufferedWriter.newLine();
-			bufferedWriter.close();
+			bufferedWriter.newLine();	
 		} catch (Exception e) {
 			throw new Exception();
+		}finally {
+			if (bufferedWriter != null) {
+				bufferedWriter.close();
+			}
 		}
 	}
 
 	public static List<String> readFromFile(String pathFile) throws IOException {
-
+		BufferedReader bufferedReader = null;
+		
 		List<String> listLine = new ArrayList<>();
+		
 		try {
 			FileReader fileReader = new FileReader(pathFile);
-			BufferedReader bufferedReader = new BufferedReader(fileReader);
+			bufferedReader = new BufferedReader(fileReader);
 			String line = null;
 			while ((line = bufferedReader.readLine()) != null) {
 				listLine.add(line);
 			}
-			bufferedReader.close();
 		} catch (IOException e) {
 			throw new IOException();
+		}finally {
+			if (bufferedReader != null) {
+				bufferedReader.close();
+			}
 		}
 		return listLine;
 	}

@@ -66,6 +66,7 @@ public class FileToObject {
 				System.out.println("-line " + (i + 1) + " error: " + e.getMessage());
 				continue;
 			}
+			
 			goodStudent.setUniversityName(splitStrings[4]);
 			goodStudent.setGradeLevel(splitStrings[5]);
 			goodStudent.setGpa(Double.parseDouble(splitStrings[6]));

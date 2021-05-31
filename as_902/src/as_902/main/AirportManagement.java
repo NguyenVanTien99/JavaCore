@@ -27,6 +27,7 @@ public class AirportManagement {
 			System.out.println("7.Display Fixedwing to Airport");
 			System.out.println("8.Display Helicopter to Airport");
 			System.out.println("9.Display all airports");
+			System.out.println("10.Back to main menu");
 			System.out.println("Exit");
 			System.out.println("------------------------------------------------------");
 			System.out.print("please Select: ");
@@ -68,6 +69,10 @@ public class AirportManagement {
 				
 			case "9":
 				airportServices.displayAllAirport();
+				break;
+				
+			case "10":
+				Management.main(null);
 				break;
 
 			default:

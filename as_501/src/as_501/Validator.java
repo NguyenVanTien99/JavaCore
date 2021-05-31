@@ -12,6 +12,15 @@ public class Validator {
 	
 	private static Matcher matcher;
 	
+	/**
+	 * Check code follow the pattern
+	 * 
+	 * @method validateCode
+	 * 
+	 * @param code
+	 * 
+	 * @return true if code is valid, else false
+	 */
 	public static void validateCode(String code) throws GeneralException{
 		pattern = Pattern.compile(VALID_CODE_RG);
 		matcher = pattern.matcher(code);
@@ -19,7 +28,15 @@ public class Validator {
 			throw new GeneralException("Course code has a format FWXXX(X : 0 -9)");
 		}
 	}
-	
+	/**
+	 * Check status follow the pattern
+	 * 
+	 * @method validateStatus
+	 * 
+	 * @param status
+	 * 
+	 * @return true if status is valid, else false
+	 */
 	public static void validateStatus(String status) throws GeneralException{
 		pattern = Pattern.compile(VALID_STATUS_RG);
 		matcher = pattern.matcher(status);
@@ -27,7 +44,15 @@ public class Validator {
 			throw new GeneralException("Value: active/in-active");
 		}
 	}
-	
+	/**
+	 * Check flag follow the pattern
+	 * 
+	 * @method validateFlag
+	 * 
+	 * @param flag
+	 * 
+	 * @return true if flag is valid, else false
+	 */
 	public static void validateFlag(String flag) throws GeneralException{
 		pattern = Pattern.compile(VALID_FLAG_RG);
 		matcher = pattern.matcher(flag);

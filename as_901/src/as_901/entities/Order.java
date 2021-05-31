@@ -31,7 +31,7 @@ public class Order implements Serializable {
 		if (Validator.isOrderNumber(number)) {
 			this.number = number;			
 		} else {
-			throw new OrderException("Order is not valid");
+			throw new OrderException("Order number has 10 digits");
 		}
 		
 	}

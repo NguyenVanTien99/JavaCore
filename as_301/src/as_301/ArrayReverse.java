@@ -1,25 +1,39 @@
 package as_301;
 
-import java.util.Iterator;
-
 public class ArrayReverse {
-	static void reverse(int a[], int n) {
-		int[] b = new int[n];
-		int j = n;
-		for (int i = 0; i < n; i++) {
+	
+	
+	/**
+	 * revert element in array
+	 * @param array to revert a
+	 * @param length of array n
+	 * 
+	 * @display array has been reversed in console
+	 */
+	static void reverse(int a[]) {
+		
+		// new array
+		int[] b = new int[a.length];
+		
+		int j = b.length;
+		
+		// assign the last element of b[] equal to first element of a []
+		for (int i = 0; i < a.length; i++) {
 			b[j - 1] = a[i];
 			j -- ;
 		}
-
-		System.out.println("Reversed array is: \n");
-		for (int k = 0; k < n; k++) {
-			System.out.println(b[k]);
+		
+		//display
+		System.out.print("Reversed array is: \n");
+		for (int k = 0; k < b.length; k++) {
+			System.out.print(b[k] + " ");
 		}
+		
 	}
 
 	public static void main(String[] args) {
 		int[] myIntArray = { 43, 32, 53, 23, 12, 34, 3, 12, 43, 32 };
-		reverse(myIntArray, myIntArray.length);
+		reverse(myIntArray);
 	}
 
 }

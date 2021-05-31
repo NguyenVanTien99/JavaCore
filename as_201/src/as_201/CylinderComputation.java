@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class CylinderComputation {
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the cylinder radius");
 		double radius = scanner.nextDouble();

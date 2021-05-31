@@ -44,7 +44,7 @@ public class Customer implements Serializable{
 		if (Validator.isPhone(phone)) {
 			this.phone = phone;
 		} else {
-			throw new PhoneException("phone is not valid");
+			throw new PhoneException("phone is has 10 digit");
 		}
 		
 		

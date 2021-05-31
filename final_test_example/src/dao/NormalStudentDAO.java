@@ -16,4 +16,7 @@ public interface NormalStudentDAO {
 	 * @throws SQLException
 	 */
 	boolean saveNormalStudent(List<NormalStudent> normalStudents) throws SQLException;
+	
+	
+	List<NormalStudent> getAllNormalStudents() throws Exception;
 }

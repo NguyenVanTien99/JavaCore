@@ -102,7 +102,10 @@ public class CustomerService {
 
 	public void display() throws IOException {
 		List<Customer> customers = getAll();
-		System.out.println(customers.size());
+		
+		if (customers.size() == 0) {
+			System.out.println("No customer");
+		}
 		for (Customer customer : customers) {
 			System.out.println(customer);
 		}

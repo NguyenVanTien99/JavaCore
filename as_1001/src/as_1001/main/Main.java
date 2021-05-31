@@ -62,7 +62,7 @@ public class Main {
 
 			default:
 				choice = "N";
-			}
+				break;			}
 		} while (choice != "N");
 	}
 

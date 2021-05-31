@@ -1,5 +1,13 @@
 package as_401;
 
+//1. Tìm chỉ số nằm giữa mảng để chia mảng thành 2 nửa:
+//middle m = (l+r)/2
+//2. Gọi đệ quy hàm mergeSort cho nửa đầu tiên:  
+//mergeSort(arr, l, m)
+//3. Gọi đệ quy hàm mergeSort cho nửa thứ hai:
+//mergeSort(arr, m+1, r)
+//4. Gộp 2 nửa mảng đã sắp xếp ở (2) và (3):
+//merge(arr, 1, m, r)
 public class SortAlgoritm {
 	// Merge hai mảng con của arr[].
 	// Mảng con thứ nhất là arr[l..m]

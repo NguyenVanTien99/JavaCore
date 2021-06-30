@@ -36,14 +36,12 @@ public class StudentManagement {
 			switch (choice) {
 			case "1":
 
-				try {
+			
 					goodStudents = FileToObject.convertGoodStudentFromFile();
 					for (GoodStudent goodStudent : goodStudents) {
 						System.out.println(goodStudent.showMyInfor());
 					}
-				} catch (Exception e) {
-					System.out.println("input file have unknow errors");
-				}
+				
 				break;
 
 			case "2":
